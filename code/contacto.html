@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Enrique Fárez</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: "#002E46" /* Azul Oscuro - Principal */,
+                petrol:
+                  "#004C70" /* Azul Petróleo - Acento (anteriormente medium) */,
+                light: "#F8F9FA" /* Gris Claro - Fondos (ajustado de F4F6F8) */,
+                white: "#FFFFFF",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              display: ["Poppins", "sans-serif"],
+            },
+            container: {
+              center: true,
+              padding: "1.5rem",
+              screens: {
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xl: "1280px",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      /* Estilos base */
+      body {
+        @apply antialiased text-gray-800 bg-brand-light;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        @apply font-display;
+      }
+      .active-nav {
+        @apply font-bold text-brand-petrol underline underline-offset-8 decoration-2;
+      }
+      /* Estilo para el menú móvil */
+      #mobile-menu-toggle:checked ~ #mobile-menu {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header
+      class="sticky top-0 z-50 w-full bg-white/90 backdrop-blur-md border-b border-gray-200"
+    >
+      <input type="checkbox" id="mobile-menu-toggle" class="hidden" />
+
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a href="./index.html" class="flex items-center gap-3 group">
+          <div
+            class="w-8 h-8 bg-brand-dark flex items-center justify-center rounded-lg group-hover:bg-brand-petrol transition-colors"
+          >
+            <span class="text-white font-display font-bold text-lg">E</span>
+          </div>
+          <span
+            class="font-display text-xl font-bold text-brand-dark tracking-tight"
+            >Enrique Fárez</span
+          >
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+          <a
+            href="./index.html"
+            class="text-sm font-medium text-gray-700 hover:text-brand-petrol transition-colors"
+            >Inicio</a
+          >
+          <a
+            href="./especialidades.html"
+            class="text-sm font-medium text-gray-700 hover:text-brand-petrol transition-colors"
+            >Especialidades</a
+          >
+          <a
+            href="./ecosistema.html"
+            class="text-sm font-medium text-gray-700 hover:text-brand-petrol transition-colors"
+            >Ecosistema</a
+          >
+          <a href="./contacto.html" class="active-nav">Contacto</a>
+        </nav>
+
+        <div class="hidden md:block">
+          <a
+            href="./contacto.html"
+            class="inline-block bg-brand-petrol text-white px-5 py-2.5 rounded-lg text-sm font-bold hover:bg-brand-dark transition-all duration-200 shadow-sm hover:shadow-md"
+          >
+            Agendar consulta
+          </a>
+        </div>
+
+        <label
+          for="mobile-menu-toggle"
+          class="md:hidden cursor-pointer p-2 text-brand-dark hover:bg-gray-100 rounded-md transition-colors"
+        >
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </label>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg left-0 z-40"
+      >
+        <div class="flex flex-col p-6 gap-4">
+          <a
+            href="./index.html"
+            class="text-base font-medium text-brand-dark py-2 border-b border-gray-50 hover:text-brand-petrol"
+            >Inicio</a
+          >
+          <a
+            href="./especialidades.html"
+            class="text-base font-medium text-brand-dark py-2 border-b border-gray-50 hover:text-brand-petrol"
+            >Especialidades</a
+          >
+          <a
+            href="./ecosistema.html"
+            class="text-base font-medium text-brand-dark py-2 border-b border-gray-50 hover:text-brand-petrol"
+            >Ecosistema</a
+          >
+          <a
+            href="./contacto.html"
+            class="text-base active-nav py-2 border-b border-gray-50"
+            >Contacto</a
+          >
+          <a
+            href="./contacto.html"
+            class="mt-2 w-full text-center bg-brand-petrol text-white px-5 py-3 rounded-lg text-sm font-bold hover:bg-brand-dark"
+            >Agendar consulta</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+      <section class="py-16 md:py-24 px-6 w-full">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <div class="flex flex-col gap-10">
+              <div class="space-y-6">
+                <h1
+                  class="text-5xl md:text-6xl font-bold tracking-tight text-brand-dark leading-tight"
+                >
+                  Contacto
+                </h1>
+                <p
+                  class="text-xl md:text-2xl text-gray-600 font-light leading-relaxed"
+                >
+                  ¿Quieres hablar sobre tu proyecto de transformación pública?
+                </p>
+              </div>
+
+              <div class="w-16 h-1 bg-brand-petrol/30 rounded-full"></div>
+
+              <div class="space-y-8">
+                <h3
+                  class="text-sm font-bold uppercase tracking-wider text-brand-petrol"
+                >
+                  Información de contacto
+                </h3>
+
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div
+                    class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:border-brand-petrol/30 transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-3xl text-brand-petrol"
+                      >mail</span
+                    >
+                    <div>
+                      <p
+                        class="text-xs text-gray-500 uppercase font-semibold mb-1"
+                      >
+                        Email
+                      </p>
+                      <a
+                        href="mailto:contacto@enriquefarez.com"
+                        class="font-medium text-lg hover:text-brand-petrol transition-colors"
+                        >contacto@enriquefarez.com</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:border-brand-petrol/30 transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-3xl text-brand-petrol"
+                      >location_on</span
+                    >
+                    <div>
+                      <p
+                        class="text-xs text-gray-500 uppercase font-semibold mb-1"
+                      >
+                        Ubicación
+                      </p>
+                      <p class="font-medium text-lg">Las Palmas</p>
+                    </div>
+                  </div>
+                  <div
+                    class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm flex flex-col gap-3 hover:border-brand-petrol/30 transition-colors"
+                  >
+                    <span
+                      class="material-symbols-outlined text-3xl text-brand-petrol"
+                      >call</span
+                    >
+                    <div>
+                      <p
+                        class="text-xs text-gray-500 uppercase font-semibold mb-1"
+                      >
+                        Teléfono
+                      </p>
+                      <p class="font-medium text-lg">+34 900 000 000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white p-8 md:p-10 rounded-2xl shadow-xl border border-gray-100"
+            >
+              <h2 class="text-3xl font-bold text-brand-dark mb-8">
+                Envíanos un mensaje
+              </h2>
+              <form action="#" method="POST" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label
+                      for="nombre"
+                      class="text-sm font-semibold text-gray-700"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      id="nombre"
+                      name="nombre"
+                      placeholder="Tu nombre completo"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-petrol/50 focus:border-brand-petrol transition-all"
+                      required
+                    />
+                  </div>
+                  <div class="space-y-2">
+                    <label
+                      for="email"
+                      class="text-sm font-semibold text-gray-700"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="tu.email@ejemplo.com"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-petrol/50 focus:border-brand-petrol transition-all"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="asunto"
+                    class="text-sm font-semibold text-gray-700"
+                    >Asunto</label
+                  >
+                  <div class="relative">
+                    <select
+                      id="asunto"
+                      name="asunto"
+                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-petrol/50 focus:border-brand-petrol transition-all appearance-none cursor-pointer"
+                    >
+                      <option value="" disabled selected>
+                        Selecciona un asunto
+                      </option>
+                      <option value="proyecto">Nuevo Proyecto</option>
+                      <option value="consultoria">Consultoría</option>
+                      <option value="formacion">Formación</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                    <div
+                      class="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-500"
+                    >
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="mensaje"
+                    class="text-sm font-semibold text-gray-700"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    placeholder="¿Cómo podemos ayudarte?"
+                    class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-petrol/50 focus:border-brand-petrol transition-all resize-none"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-brand-petrol text-white font-bold py-4 rounded-lg hover:bg-brand-dark hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2"
+                >
+                  <span>Enviar mensaje</span>
+                  <span class="material-symbols-outlined text-lg"> send </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-brand-dark section-padding pt-16">
+      <div class="container">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-10 border-b border-brand-petrol/30 pb-12 mb-8"
+        >
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex-shrink-0 flex items-center gap-2 text-white mb-4">
+              <div
+                class="w-8 h-8 bg-brand-dark flex items-center justify-center rounded-lg border border-brand-petrol"
+              >
+                <span class="text-white font-display font-bold text-lg">E</span>
+              </div>
+              <span class="text-xl font-bold font-display tracking-tight"
+                >Enrique Fárez</span
+              >
+            </div>
+            <p class="text-sm text-gray-400 max-w-xs">
+              Liderando la transformación pública con IA y análisis de datos.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-semibold mb-4 tracking-wider uppercase text-sm"
+            >
+              Navegación
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="./index.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./especialidades.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Especialidades</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./ecosistema.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Ecosistema</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./contacto.html"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-semibold mb-4 tracking-wider uppercase text-sm"
+            >
+              Legal
+            </h4>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Aviso legal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >Cookies</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-semibold mb-4 tracking-wider uppercase text-sm"
+            >
+              Contacto
+            </h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-brand-petrol text-xl"
+                  >location_on</span
+                >
+                <span class="text-sm text-gray-400">Las Palmas, España</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-brand-petrol text-xl"
+                  >mail</span
+                >
+                <a
+                  href="mailto:contacto@enriquefarez.com"
+                  class="text-sm text-gray-400 hover:text-white transition-colors"
+                  >contacto@enriquefarez.com</a
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-brand-petrol text-xl"
+                  >call</span
+                >
+                <span class="text-sm text-gray-400">+34 900 000 000</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-brand-petrol/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500"
+        >
+          <p>&copy; 2024 Enrique Fárez. Todos los derechos reservados.</p>
+          <p>Diseño accesible compatible con WordPress FSE.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

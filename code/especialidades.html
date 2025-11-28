@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especialidades - Enrique Fárez</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "brand-dark": "#002E46",
+              "brand-medium": "#004C70",
+              "brand-light": "#F4F6F8",
+              "background-dark": "#001a29",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"] /* Cuerpo de texto */,
+              display: ["Poppins", "sans-serif"] /* Títulos y encabezados */,
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body
+    class="font-sans bg-white dark:bg-background-dark text-slate-800 dark:text-slate-200 antialiased"
+  >
+    <div class="relative flex min-h-screen w-full flex-col">
+      <header
+        class="sticky top-0 z-50 flex items-center justify-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md shadow-sm border-b border-slate-100 dark:border-slate-800"
+      >
+        <div
+          class="flex w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4"
+        >
+          <div class="flex items-center gap-3 text-slate-900 dark:text-white">
+            <div
+              class="w-8 h-8 bg-brand-dark flex items-center justify-center rounded-lg"
+            >
+              <span class="text-white font-display font-bold text-lg">E</span>
+            </div>
+            <h2 class="font-display text-xl font-bold tracking-tight">
+              Enrique Fárez
+            </h2>
+          </div>
+
+          <nav class="hidden md:flex items-center gap-8">
+            <a
+              href="./index.html"
+              class="text-sm font-medium text-slate-600 hover:text-brand-medium dark:text-slate-300 dark:hover:text-white"
+              >Inicio</a
+            >
+            <a
+              href="./especialidades.html"
+              class="text-sm font-bold text-brand-medium dark:text-white border-b-2 border-brand-medium"
+              >Especialidades</a
+            >
+            <a
+              href="./ecosistema.html"
+              class="text-sm font-medium text-slate-600 hover:text-brand-medium dark:text-slate-300 dark:hover:text-white"
+              >Ecosistema</a
+            >
+            <a
+              href="./contacto.html"
+              class="text-sm font-medium text-slate-600 hover:text-brand-medium dark:text-slate-300 dark:hover:text-white"
+              >Contacto</a
+            >
+          </nav>
+
+          <a
+            href="./contacto.html"
+            class="hidden md:flex items-center justify-center h-10 px-6 bg-brand-medium text-white text-sm font-bold rounded-lg shadow-sm hover:bg-brand-dark hover:shadow-md transition-all"
+          >
+            Agendar consulta
+          </a>
+
+          <div class="md:hidden">
+            <button class="text-brand-dark dark:text-white p-2">
+              <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-grow">
+        <section
+          class="relative bg-white dark:bg-background-dark pt-20 pb-12 sm:pt-28 sm:pb-16 text-center"
+        >
+          <div class="mx-auto max-w-7xl px-6">
+            <span
+              class="inline-block mb-4 px-3 py-1 bg-brand-light dark:bg-slate-800 text-brand-medium dark:text-sky-300 rounded-full text-xs font-bold uppercase tracking-wider"
+            >
+              Estrategia y Tecnología
+            </span>
+            <h1
+              class="font-display text-5xl font-bold leading-tight text-brand-dark dark:text-white mb-6"
+            >
+              Nuestras Especialidades
+            <p
+              class="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400"
+            >
+              Soluciones estratégicas para los retos del sector público,
+              potenciadas por Inteligencia Artificial y datos.
+            </p>
+          </div>
+        </section>
+
+        <section class="py-12 pb-24">
+          <div
+            class="mx-auto max-w-7xl px-6 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            <article
+              class="flex flex-col p-8 rounded-2xl border border-slate-200 bg-brand-light/50 hover:bg-white hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/40 dark:hover:bg-slate-900 transition-all"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-medium text-white shadow-lg"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >smart_toy</span
+                >
+              </div>
+              <h2
+                class="font-display text-2xl font-bold mb-3 text-brand-dark dark:text-white"
+              >
+                IA en Transformación Pública (GovTech)
+              </h2>
+              <p class="text-base text-slate-600 dark:text-slate-400 mb-6">
+                Optimización de procesos administrativos y mejora de la atención
+                ciudadana mediante automatización inteligente.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700"
+              >
+                <h3
+                  class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2"
+                >
+                  Caso de aplicación
+                </h3>
+                <p class="text-sm text-slate-700 dark:text-slate-300">
+                  Reducción del 30% en tiempos de espera para trámites
+                  municipales mediante triaje automatizado.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col p-8 rounded-2xl border border-slate-200 bg-brand-light/50 hover:bg-white hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/40 dark:hover:bg-slate-900 transition-all"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-medium text-white shadow-lg"
+              >
+                <span class="material-symbols-outlined text-3xl"
+                  >monitoring</span
+                >
+              </div>
+              <h2
+                class="font-display text-2xl font-bold mb-3 text-brand-dark dark:text-white"
+              >
+                Media Intelligence con IA
+              </h2>
+              <p class="text-base text-slate-600 dark:text-slate-400 mb-6">
+                Análisis automatizado de medios y redes sociales para detectar
+                tendencias de opinión pública y gestionar reputación
+                institucional.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700"
+              >
+                <h3
+                  class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2"
+                >
+                  Caso de aplicación
+                </h3>
+                <p class="text-sm text-slate-700 dark:text-slate-300">
+                  Dashboard de escucha activa para anticipar crisis de
+                  comunicación.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col p-8 rounded-2xl border border-slate-200 bg-brand-light/50 hover:bg-white hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/40 dark:hover:bg-slate-900 transition-all"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-medium text-white shadow-lg"
+              >
+                <span class="material-symbols-outlined text-3xl">campaign</span>
+              </div>
+              <h2
+                class="font-display text-2xl font-bold mb-3 text-brand-dark dark:text-white"
+              >
+                Estrategia de Contenidos AI-First y Reputación
+              </h2>
+              <p class="text-base text-slate-600 dark:text-slate-400 mb-6">
+                Creación de narrativas públicas y posicionamiento de expertos
+                (como Enrique Fárez) utilizando la IA como herramienta de
+                aceleración y citación.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700"
+              >
+                <h3
+                  class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2"
+                >
+                  Caso de aplicación
+                </h3>
+                <p class="text-sm text-slate-700 dark:text-slate-300">
+                  Posicionamiento del contenido para ser la fuente citada por
+                  los modelos de lenguaje de IA Generativa.
+                </p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col p-8 rounded-2xl border border-slate-200 bg-brand-light/50 hover:bg-white hover:shadow-xl dark:border-slate-800 dark:bg-slate-900/40 dark:hover:bg-slate-900 transition-all"
+            >
+              <div
+                class="mb-6 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-medium text-white shadow-lg"
+              >
+                <span class="material-symbols-outlined text-3xl">gavel</span>
+              </div>
+              <h2
+                class="font-display text-2xl font-bold mb-3 text-brand-dark dark:text-white"
+              >
+                Contratación Pública Predictiva (B2G)
+              </h2>
+              <p class="text-base text-slate-600 dark:text-slate-400 mb-6">
+                Asesoramiento para la gestión de ofertas y pliegos técnicos,
+                aplicando análisis de datos avanzado y modelos predictivos para
+                reducir riesgos y optimizar la compra pública.
+              </p>
+              <div
+                class="mt-auto pt-6 border-t border-slate-200 dark:border-slate-700"
+              >
+                <h3
+                  class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2"
+                >
+                  Caso de aplicación
+                </h3>
+                <p class="text-sm text-slate-700 dark:text-slate-300">
+                  Optimización de pliegos para garantizar la transparencia y la
+                  legalidad en proyectos GovTech.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="py-20 bg-brand-dark text-center text-white">
+          <div class="mx-auto max-w-4xl px-6">
+            <h2 class="font-display text-3xl sm:text-4xl font-bold mb-6">
+              ¿Quieres aplicar IA en tu organización?
+            </h2>
+            <p class="text-lg text-slate-300 mb-10">
+              Demos el primer paso hacia la transformación digital de tu
+              entidad.
+            </p>
+            <a
+              href="./contacto.html"
+              class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-base font-bold text-brand-dark hover:bg-slate-100 transition"
+            >
+              Hablemos
+              <span class="material-symbols-outlined ml-2 text-xl"
+                >arrow_forward</span
+              >
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-brand-dark text-white border-t border-white/10">
+        <div
+          class="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12"
+        >
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-8 h-8 bg-brand-dark flex items-center justify-center rounded-lg border border-brand-medium"
+              >
+                <span class="text-white font-display font-bold text-lg">E</span>
+              </div>
+              <h3 class="font-display text-xl font-bold">Enrique Fárez</h3>
+            </div>
+            <p class="text-sm text-slate-300">
+              Estrategia pública, IA, datos y comunicación institucional.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-sm font-bold uppercase tracking-wider text-white/60 mb-6"
+            >
+              Navegación
+            </h4>
+            <nav class="flex flex-col space-y-3">
+              <a
+                href="./index.html"
+                class="text-sm text-slate-300 hover:text-white"
+                >Inicio</a
+              >
+              <a
+                href="./especialidades.html"
+                class="text-sm text-white font-medium"
+                >Especialidades</a
+              >
+              <a
+                href="./ecosistema.html"
+                class="text-sm text-slate-300 hover:text-white"
+                >Ecosistema</a
+              >
+              <a
+                href="./contacto.html"
+                class="text-sm text-slate-300 hover:text-white"
+                >Contacto</a
+              >
+            </nav>
+          </div>
+
+          <div>
+            <h4
+              class="text-sm font-bold uppercase tracking-wider text-white/60 mb-6"
+            >
+              Legal
+            </h4>
+            <nav class="flex flex-col space-y-3">
+              <a href="#" class="text-sm text-slate-300 hover:text-white"
+                >Aviso legal</a
+              >
+              <a href="#" class="text-sm text-slate-300 hover:text-white"
+                >Privacidad</a
+              >
+              <a href="#" class="text-sm text-slate-300 hover:text-white"
+                >Cookies</a
+              >
+            </nav>
+          </div>
+
+          <div>
+            <h4
+              class="text-sm font-bold uppercase tracking-wider text-white/60 mb-6"
+            >
+              Contacto
+            </h4>
+            <p class="flex items-center gap-3 text-sm text-slate-300">
+              <span class="material-symbols-outlined text-lg">location_on</span>
+              Las Palmas
+            </p>
+            <p class="flex items-center gap-3 text-sm text-slate-300 mt-3">
+              <span class="material-symbols-outlined text-lg">mail</span>
+              contacto@enriquefarez.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-t border-white/10 text-center text-xs text-slate-400 py-6"
+        >
+          © 2024 Enrique Fárez. Todos los derechos reservados.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

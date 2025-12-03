@@ -88,6 +88,26 @@
         display: block;
       }
     </style>
+
+    <!-- ========================================================= -->
+    <!-- SCHEMA PERSON — IDENTIDAD PRINCIPAL DE ENRIQUE FÁREZ       -->
+    <!-- Se usa como @id para conectar todos los VideoObject       -->
+    <!-- Dominio utilizado: https://farezenrique.netlify.app/      -->
+    <!-- ========================================================= -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://farezenrique.netlify.app/#enrique-farez",
+        "name": "Enrique Fárez",
+        "jobTitle": "Consultor en Transformación Pública con IA",
+        "url": "https://farezenrique.netlify.app/",
+        "image": "https://farezenrique.netlify.app/assets/Capa-3-800x730.png",
+        "sameAs": ["https://www.linkedin.com/", "https://www.youtube.com/"],
+        "description": "Consultor y formador en IA aplicada a la administración pública. CEO y fundador, con experiencia en media intelligence y transformación digital."
+      }
+    </script>
+    <!-- ========================================================= -->
   </head>
   <body class="flex flex-col min-h-screen">
     <header
@@ -512,60 +532,164 @@
         </div>
       </section>
 
-      <section class="py-20 bg-gray-50">
+      <!-- ========================================================= -->
+      <!--   APARICIONES EN TV – MMI ANALYTICS (EN MEDIOS [VÍDEO])   -->
+      <!--   Sección añadida en Día 5: contiene embeds de MMI (TVE)   -->
+      <!-- ========================================================= -->
+      <section
+        id="en-medios-tv"
+        class="py-20 bg-gray-50 border-t border-gray-200"
+      >
         <div class="container mx-auto px-4">
-          <div class="text-center max-w-xl mx-auto mb-16">
+          <!-- Encabezado -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
             <p
-              class="text-sm font-semibold text-brand-petrol uppercase tracking-wider mb-2"
+              class="text-sm font-bold text-brand-petrol uppercase tracking-wider mb-2"
             >
-              Prensa & Opinión
+              En Medios
             </p>
             <h2 class="text-4xl font-extrabold text-brand-dark">
-              Apariciones en Medios
+              Apariciones en TV
             </h2>
             <p class="text-lg text-gray-600 mt-4">
-              Análisis y opinión en prensa nacional e internacional
+              Entrevistas y análisis en televisión sobre comunicación política y
+              redes sociales.
             </p>
           </div>
 
-          <div class="max-w-6xl mx-auto mb-12 border-t border-gray-200"></div>
+          <!-- GRID DE VIDEOS -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+            <!-- VIDEO 1 -->
+            <article
+              class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 p-6"
+            >
+              <div class="aspect-video mb-4 rounded-lg overflow-hidden">
+                <!-- Embed real (MMI 1) -->
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/x9hsIskdGE8"
+                  title="Análisis de redes sociales en TVE-C"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
 
-          <div
-            class="flex flex-wrap justify-center items-center gap-x-16 gap-y-10 max-w-6xl mx-auto"
-          >
-            <img
-              src="./assets/eldiario-1.jpg"
-              alt="eldiario.es"
-              class="h-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-            />
-            <img
-              src="./assets/infolibre-1.jpg"
-              alt="infoLibre"
-              class="h-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-            />
-            <img
-              src="./assets/onda.jpg"
-              alt="Onda Cero"
-              class="h-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-            />
-            <img
-              src="./assets/ser-1.jpg"
-              alt="Cadena SER"
-              class="h-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-            />
-            <img
-              src="./assets/rne-1.jpg"
-              alt="RNE"
-              class="h-12 grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
-            />
+              <h3 class="text-xl font-bold text-brand-dark mb-2">
+                El análisis de redes sociales y la proyección de voto electoral
+              </h3>
+
+              <p class="text-sm text-gray-500 mb-2">
+                TVE-C · 2019 · Duración: 3:18
+              </p>
+
+              <p class="text-gray-600 text-sm">
+                Enrique Fárez explica cómo el análisis masivo de conversaciones
+                en redes permite anticipar resultados electorales con alta
+                precisión.
+              </p>
+            </article>
+
+            <!-- VIDEO 2 -->
+            <article
+              class="bg-white rounded-xl shadow-md hover:shadow-xl transition-all border border-gray-200 p-6"
+            >
+              <div class="aspect-video mb-4 rounded-lg overflow-hidden">
+                <!-- Embed real (MMI 2) -->
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/AhGVINzlK_A"
+                  title="WhatsApp y manipulación política en TVE"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <h3 class="text-xl font-bold text-brand-dark mb-2">
+                WhatsApp: el nuevo campo de batalla de la manipulación política
+              </h3>
+
+              <p class="text-sm text-gray-500 mb-2">
+                TVE · 2020 · Duración: 2:15
+              </p>
+
+              <p class="text-gray-600 text-sm">
+                Análisis sobre la migración de campañas de desinformación hacia
+                plataformas privadas y el rol del Big Data en la segmentación
+                emocional.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <
+      <!-- ========================================================= -->
+      <!--   IA Y TRANSFORMACIÓN – FUNDACIÓN EMPRENDE (CONFERENCIAS) -->
+      <!--   Sección añadida en Día 5: embed del vídeo Fundación         -->
+      <!-- ========================================================= -->
+      <section
+        id="ia-transformacion"
+        class="py-20 bg-white border-t border-gray-200"
+      >
+        <div class="container mx-auto px-4">
+          <!-- Encabezado -->
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <p
+              class="text-sm font-bold text-brand-petrol uppercase tracking-wider mb-2"
+            >
+              IA y Transformación
+            </p>
+            <h2 class="text-4xl font-extrabold text-brand-dark">
+              Conferencias y Mentorías
+            </h2>
+            <p class="text-lg text-gray-600 mt-4">
+              Formación aplicada para impulsar la modernización del sector
+              público con IA.
+            </p>
+          </div>
+
+          <div class="max-w-4xl mx-auto">
+            <article
+              class="bg-brand-light p-6 rounded-2xl shadow-md hover:shadow-xl border border-brand-petrol/20 transition-all"
+            >
+              <div
+                class="aspect-video mb-6 rounded-xl overflow-hidden border border-brand-petrol/20"
+              >
+                <!-- Embed real (Fundación) -->
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/1SKhTJouw-Y"
+                  title="Fundación Emprende - IA y Transformación Pública"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+
+              <h3 class="text-2xl font-bold text-brand-dark mb-2">
+                Inteligencia Artificial y la Transformación del Sector Público
+              </h3>
+
+              <p class="text-sm text-gray-500 mb-4">
+                Ayuntamiento de Ingenio · Fundación Emprende · 2024 · Duración:
+                4:30
+              </p>
+
+              <p class="text-gray-700 text-base">
+                Enrique Fárez lidera una mentoría práctica usando ChatGPT y
+                Claude AI para demostrar cómo la inteligencia artificial ya está
+                modernizando procesos y mejorando decisiones en la
+                administración pública.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-          <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="text-center max-w-xl mx-auto mb-16">
             <p
               class="text-sm font-bold text-brand-petrol uppercase tracking-wider mb-2"
             >
@@ -856,5 +980,82 @@
         </div>
       </div>
     </footer>
+
+    <!-- ========================================================= -->
+    <!-- SCHEMA.ORG — VIDEOOBJECTS (3 vídeos)                       -->
+    <!-- Colocados justo antes de </body>. Cada uno conecta con el  -->
+    <!-- Person mediante "author": { "@id": "https://farezenrique..."} -->
+    <!-- Miniaturas: se usan las miniaturas públicas de YouTube     -->
+    <!-- ========================================================= -->
+
+    <!-- Video 1: El análisis de redes sociales (MMI 1) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "El análisis de redes sociales y la proyección de voto electoral",
+        "description": "Enrique Fárez explica en TVE-C cómo las redes sociales permiten medir reputación política y predecir resultados electorales.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/x9hsIskdGE8/maxresdefault.jpg",
+        "uploadDate": "2019-01-01",
+        "duration": "PT3M18S",
+        "embedUrl": "https://www.youtube.com/embed/x9hsIskdGE8",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TVE-C"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://farezenrique.netlify.app/#enrique-farez"
+        }
+      }
+    </script>
+
+    <!-- Video 2: WhatsApp y manipulación (MMI 2) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "WhatsApp: el nuevo campo de batalla de la manipulación política",
+        "description": "Enrique Fárez analiza en TVE cómo WhatsApp se ha convertido en el canal principal para campañas de desinformación y segmentación emocional.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/AhGVINzlK_A/maxresdefault.jpg",
+        "uploadDate": "2020-01-01",
+        "duration": "PT2M15S",
+        "embedUrl": "https://www.youtube.com/embed/AhGVINzlK_A",
+        "publisher": {
+          "@type": "Organization",
+          "name": "TVE"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://farezenrique.netlify.app/#enrique-farez"
+        }
+      }
+    </script>
+
+    <!-- Video 3: Fundación Emprende (IA y Transformación) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        "name": "Inteligencia artificial y transformación del sector público",
+        "description": "Mentoría práctica en el Ayuntamiento de Ingenio donde Enrique Fárez demuestra cómo la IA y herramientas como ChatGPT se aplican en la administración pública.",
+        "thumbnailUrl": "https://i.ytimg.com/vi/1SKhTJouw-Y/maxresdefault.jpg",
+        "uploadDate": "2024-01-01",
+        "duration": "PT4M30S",
+        "embedUrl": "https://www.youtube.com/embed/1SKhTJouw-Y",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Fundación Emprende"
+        },
+        "author": {
+          "@type": "Person",
+          "@id": "https://farezenrique.netlify.app/#enrique-farez"
+        }
+      }
+    </script>
+
+    <!-- ========================================================= -->
+    <!-- FIN DE SCHEMAS                                              -->
+    <!-- ========================================================= -->
   </body>
 </html>
